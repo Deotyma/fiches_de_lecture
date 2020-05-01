@@ -142,3 +142,15 @@ footer p {
     grid-column: 2/3;
     justify-self: center;
 }
+
+.fa-github {
+    font-size: 1.5rem;
+    color: #2c497f;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.fa-github:hover {
+    background-color: #2c497f;
+    color: #ccf5ac;
+}

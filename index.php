@@ -56,8 +56,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="js/main.js"></script>
-    <footer>
-       <p> &copy Deotyma 2020</p>
-    </footer>
-</body>
-</html>
+    <?php
+    require_once 'inc/footer.php';

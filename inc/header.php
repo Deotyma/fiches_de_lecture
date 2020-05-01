@@ -18,15 +18,15 @@
             <h1 id = "logo"><a href = "<?php echo RACINE_SITE . 'index.php'; ?>"><i class="fas fa-book-open"></i>Mes Fiches</a></h1>
             <div class="menuOwerlay">
                 <?php
-                if(estConnecte()){//si le membre est conectéecho 
+                if(isConnected()){//si le membre est conectéecho 
                     echo'<li><a class = "nav-link" href="'.RACINE_SITE.'profil.php">Profil</a></li>';
                     echo '<li><a class = "nav-link" href="'.RACINE_SITE.'connexion.php?action=deconnexion">Se déconecter</a></li>';
                 }else{// membre qui n'est pas conecté
                     echo '<a class = "nav-link" href="'.RACINE_SITE.'inscription.php">Inscription</a>';
                     echo '<a class = "nav-link" href="'.RACINE_SITE.'connexion.php">Connection</a>';
                 }
-                echo '<a class = "nav-link" href="'.RACINE_SITE.'favorits.php">favorits('.favorits().')</a>';
-                if(estAdmin()){// si le membre est admin
+                echo '<a class = "nav-link" href="'.RACINE_SITE.'favorits.php">favorits</a>';
+                if(isAdmin()){// si le membre est admin
                     echo '<a class = "nav-link" href="'.RACINE_SITE.'admin/gestion_.php">Gestion du site</a>';
 
                     echo '<a class = "nav-link" href="'.RACINE_SITE.'admin/gestion_membres.php">Gestion des membres</a>';
