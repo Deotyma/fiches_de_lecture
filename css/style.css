@@ -1,0 +1,144 @@
+/* general css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccf5ac;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+}
+
+
+/* header index */
+
+.navIndex {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 1Ovh;
+    align-items: center;
+}
+
+#logo {
+    grid-column: 2/3;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #2c497f;
+    cursor: pointer;
+}
+
+.icone {
+    cursor: pointer;
+    justify-self: end;
+    width: 3rem;
+}
+
+
+/* image and titre */
+
+.bienvenue {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.banniere {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.banniere img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lettres {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -20px;
+}
+
+.titre {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    font-size: 4rem;
+    transform: translate(-20%, -70%);
+    z-index: 4;
+    color: #2c497f;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3rem;
+}
+
+.overlay {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 10;
+    right: -50%;
+    top: 0rem;
+    background-color: #2c497f;
+    color: #ccf5ac;
+    overflow-x: hidden;
+}
+
+.overlayContent {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ccf5ac;
+    cursor: pointer;
+    font-size: 3rem;
+    display: block;
+    transition: 0.3s;
+    line-height: 4.5rem;
+}
+
+.overlay a:hover {
+    color: #bad29f;
+    transform: scale(1.2);
+    transition: all 1s ease-out;
+}
+
+.overlay .closeBtn {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    font-size: 4rem;
+}
+
+
+/* footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    color: #2c497f;
+    text-transform: uppercase;
+    font-size: 1rem;
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+footer p {
+    font-size: 1rem;
+    grid-column: 2/3;
+    justify-self: center;
+}
