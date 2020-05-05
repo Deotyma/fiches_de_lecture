@@ -2,6 +2,33 @@
     require_once 'inc/init.php';
 debug($_POST);
 
+ if(!empty($_POST)){
+
+    if(!isset($_POST['pseudo'])|| strlen($_POST['pseudo'])<6 || strlen($_POST['pseudo'])>20){
+        $content .='<p class="alert-danger"> Le pseudo doit avoir entre 6 et 20 caracteres.</p>';
+    }
+
+    if(!isset($_POST['mdp'])|| strlen($_POST['mdp'])<8 || strlen($_POST['mdp'])>20){
+        $content .='<div class="alert alert-danger">Le mot de passe doit avoir entre 8 et 20 caracteres.</div>';
+    }
+
+    if(!isset($_POST['prenom']) || strlen($_POST['prenom'])<2 || strlen($_POST['prenom'])> 20 ){
+        $content .='<div class="alert alert-danger">Le prenom doit avoir entre 2 et 20 caracteres.</div>';
+
+    }//$_POST['prenom']
+
+    if(!isset($_POST['nom']) || strlen($_POST['nom'])<2 || strlen($_POST['nom'])> 20 ){// message si contenu n'existe pas oi est trop longuo trop court
+        $content .='<div class="alert alert-danger">Le prenom doit avoir entre 2 et 20 caracteres.</div>';
+
+    }//$_POST['nom']
+
+    if(!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+        $content .='<div class="alert alert-danger">L\'email n\'est pas valide</div>';
+    }// fin mail
+
+
+} //end of if(!empty($_POST))
+
     require_once 'inc/header.php';
     
 ?>
@@ -13,9 +40,11 @@ debug($_POST);
  
     <form class="formulaire" method="post">
     <h1 class = "entete">L'Inscription</h1>
-        <div class="form-grup">
 
-            <div><input type="text" name="pseudo" id="pseudo" value="<?php echo $_POST['pseudo'] ?? '';  ?>"></div>
+    <?php echo $content; ?>
+
+        <div class="form-grup">
+             <div><input type="text" name="pseudo" id="pseudo" value="<?php echo $_POST['pseudo'] ?? '';  ?>"></div>
             <div><label for="pseudo">Pseudo</label></div>
 
         </div>

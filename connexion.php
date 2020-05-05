@@ -21,7 +21,7 @@ require_once 'inc/header.php';
         </div>
 
         <div class="form-grup">
-		<input type="submit" value="S'inscrire" class="btn">
+		<input type="submit" value="Se connecter" class="btn">
         </div>
         
   </form>    
