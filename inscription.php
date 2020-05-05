@@ -1,6 +1,6 @@
 <?php
     require_once 'inc/init.php';
-//debug($_POST);
+debug($_POST);
 
     require_once 'inc/header.php';
     
@@ -12,7 +12,7 @@
 
  
     <form class="formulaire" method="post">
-    <h1>L'Inscription</h1>
+    <h1 class = "entete">L'Inscription</h1>
         <div class="form-grup">
 
             <div><input type="text" name="pseudo" id="pseudo" value="<?php echo $_POST['pseudo'] ?? '';  ?>"></div>
@@ -65,6 +65,7 @@
     </div>
 
 </div>
+
 
 <?php
     require_once 'inc/footer.php';

@@ -1,3 +1,4 @@
+/* animation de la page index et du menu du header */
 const banniere = document.querySelector('.banniere');
 const logo = document.querySelector('#logo');
 const menu = document.querySelector('.icone');
@@ -5,7 +6,6 @@ const titre = document.querySelector('.titre');
 const btnClose = document.querySelector('.closeBtn');
 const nav = document.getElementById('myNav');
 const lettres = document.querySelectorAll('.lettres');
-
 
 const tl = new TimelineMax();
 
