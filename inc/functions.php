@@ -8,7 +8,7 @@ function debug($var){
 
 //connected
 function isConnected(){
-    if(isset($_SESSION['membres'])){
+    if(isset($_SESSION['membre'])){
         return true;    
     }else{
         return false;
@@ -18,7 +18,7 @@ function isConnected(){
 //admin
 function isAdmin()
 {
-    if (isset($_SESSION['membres']) && $_SESSION['membres' == 1]) {
+    if (isset($_SESSION['membre']) && $_SESSION['membre']['statut'] == 1) {
         return true;
     }else{
         return false;

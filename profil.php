@@ -4,6 +4,11 @@ require_once 'inc/header.php';
 
 debug($_SESSION);
 
-echo 'ceci est le contenu de la page profil';
+if(!isConnected()){
+    header('location:connexion.php');
+    exit;
+}
+
+echo 'Bonjour ' . $_SESSION['membre']['prenom'] . ' ' . $_SESSION['membre']['nom'] . '!';
 
 require_once 'inc/footer.php';

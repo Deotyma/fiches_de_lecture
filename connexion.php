@@ -44,7 +44,6 @@ if(!empty($_POST)){
 
 require_once 'inc/header.php';
 echo $message;
-echo $content;
 ?>
 
 <div class="content container">
