@@ -2,7 +2,7 @@
 
 const entete = document.querySelector('.entete');
 const form_bg = document.querySelector('.formulaire');
-const form_group = document.querySelectorAll('.form-grup');
+const form_group = document.querySelectorAll('.form-group');
 
 const tl2 = new TimelineMax();
 
