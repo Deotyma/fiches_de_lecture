@@ -28,6 +28,7 @@
                     echo '<a class = "nav-link" href="'.RACINE_SITE.'fiches.php">Les fiches</a>';
                     if(isConnected()){//si le membre est conecté true 
                         echo'<a class = "nav-link" href="'.RACINE_SITE.'profil.php">Profil</a>';
+                        echo'<a class = "nav-link" href="'.RACINE_SITE.'creation_fiche.php">Ajouter</a>';
                         echo '<a class = "nav-link" href="'.RACINE_SITE.'connexion.php?action=deconnexion">Se déconecter</a>';
                     }else{// membre qui n'est pas conecté
                         echo '<a class = "nav-link" href="'.RACINE_SITE.'inscription.php">Inscription</a>';

@@ -39,13 +39,15 @@
        </section>
 
        <!-- menu rideau -->
+
        <div id="myNav" class="overlay">
+           
            <a href="#" class="closeBtn">&times;</a>
            <div class="overlayContent">
                <a href="index.php">à propos</a>
                <a href="fiches.php">les fiches</a>
-               <a href="connexion.php">se connecter</a>
-               <a href="inscription.php">s'inscrire</a>
+               <a href="inscription.php">inscription</a>
+               <a href="connexion.php">Connexion</a>
            </div>
 
        </div>
